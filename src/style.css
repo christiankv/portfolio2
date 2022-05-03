@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    /* background-color: rgb(65, 64, 64); */
+    color: white;
+    
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.699);
+    display: grid;
+    grid-template-columns: 15em auto 15em;
+    grid-template-areas: "nav main info"
+    "nav main info"
+    "nav main info";
+    /* gap: 1em; */
+    /* column-gap: 1em; */
+}
+
+.navbar{
+    /* background-color: rgba(207, 212, 212, 0.295); */
+    /* background-image: radial-gradient(rgba(207, 212, 212, 0.295),rgba(65, 64, 64, 0.39)); */
+    width: 12em;
+    /* height: 40vh; */
+    padding: 2em 2em;
+    /* position: absolute; */
+    left: 0;
+    top: 0;
+    grid-area: nav;
+    border-right: 1px rgba(155, 146, 146, 0.09) solid;
+    max-height: 100vh;
+}
+
+.title>small{
+    position: absolute;
+    top: 2.4em;
+    margin: 0;
+}
+.title>h1{
+    margin: 0;
+}
+/* .version {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+} */
+
+.chocebtns{
+    background-color: rgb(9, 55, 124);
+    text-align: center;
+    color: yellow;
+    /* padding: 0.1em 0.5em; */
+    border-radius: 5em;  
+}
+
+.infowindow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em 1em;
+    border-left: 1px rgba(155, 146, 146, 0.09) solid;
+    /* width: 12em; */
+    /* height: 40vh; */
+
+    /* right: 0;
+    top: 0; */
+    grid-area: info;
+    max-height: 100vh;
+}
+.main{
+    grid-area: main;
+    position: relative;
+    max-height: 100vh;
+}
+
+.infowindow>h2{
+    text-align: center;
+}
+
+.card{
+    margin-top: 1em;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: 2em auto ;
+    padding: 2px;
+    border: 0.2em solid lightblue;
+    border-radius: 10px;
+
+    grid-template-areas: "language title"
+    "info info"
+    "info info"
+    ;
+
+}
+
+.c-language{
+grid-area: language;
+}
+
+.c-title{
+    grid-area: title;
+    margin-bottom: 0;
+    }
+
+.c-info{
+    border: solid black 1px;
+    grid-area: info;
+    margin: 0;
+    }
+.main-content{
+    width: 99%;
+    height: 99vh;
+    margin: 0;
+    background-color: inherit;
+    border: none;
+}
+.button-container{
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 2em;
+}
+
+.buttons{
+    text-align: center;
+    color: rgba(229, 231, 180, 0.664);
+    margin: 1em;
+    background-color: rgba(56, 53, 53, 0.699);
+    padding: 0.5em 0.7em;
+    border-radius: 3em;
+}
+
+.buttons:hover{
+    background-color: rgba(0, 0, 0, 0.699);
+    color: rgb(252, 235, 1);
+}

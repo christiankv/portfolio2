@@ -1,0 +1,27 @@
+.shopinglist1 {
+    list-style-type: square;
+    width:200px;
+    margin: auto;
+}
+.shopinglist2 {
+    width:200px;
+    margin: auto;
+}
+
+body{
+    margin: 0;
+    color: rgb(128, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: black;
+}
+
+header{
+    color: chartreuse;
+}
+main {
+    padding: 10px;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
